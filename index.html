@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalar Livebox 7</title>
+    <style>
+        /* Estilos Base */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        h2 {
+            color: #333;
+            margin: 20px 0;
+            font-size: 1.5rem;
+        }
+		
+		p {
+			white-space: pre-wrap; /* Respeta \n y envuelve si es necesario */
+		}
+		
+		u {
+			color: red;
+		}
+
+        /* Contenedor de Botones */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background-color: #007AFF; /* Azul estilo iOS */
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            touch-action: manipulation; /* Optimiza el toque en móviles */
+        }
+
+        button:active {
+            transform: scale(0.95);
+            background-color: #0056b3;
+        }
+
+		button:disabled {
+			background-color: #6c757d;
+		}
+		
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Livebox 7</h2>
+        <img id="imagen-actual" alt="Livebox 7">
+        <p id="texto-actual"></p>
+        <div class="nav-buttons">
+            <button id="anterior-btn"  class="btn-prev">Anterior</button>
+            <button id="siguiente-btn" class="btn-next">Siguiente</button>
+        </div>
+		<script src="navigate.js"></script>
+    </div>
+
+</body>
+</html>
